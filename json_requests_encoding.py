@@ -1,7 +1,11 @@
+#interact with a users API by making different HTTP requests based on the provided command-line argument. 
+#It utilizes custom classes for encoding and decoding JSON data and works with the User class for representing user data to perform operations on users, such as retrieving information, creating users, updating, and deleting users, 
+
 import sys
-import requests
+import requests #module is used to send requests to the users_api and parse response body as json using response.json() method
 
 import json
+#there may be custom classes defined in the seperate module called "users_api"
 from users_api import User, UserDecoder, CustomEncoder
 
 if __name__ == "__main__":
